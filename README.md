@@ -61,7 +61,7 @@ I learned how to develop a page with grid, flex, mobile-first and much more abou
 
 ### Continued development
 
-I'm focused on mastering HTML5, CSS3 JavaScript and JS.node technologies.
+I'm focused on mastering HTML5, CSS3 JavaScript and React technologies.
 
 
 ## Author
