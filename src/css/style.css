@@ -63,6 +63,7 @@ body {
     .logo {
         width: 250px;
     }
+
 }
 
 /* Section Principal*/
@@ -120,6 +121,12 @@ body {
 
     .principal .botao {
         align-self: start;
+        transition: .3s;
+    }
+
+    .principal .botao:hover {
+        background: hsl(300, 69%, 71%);
+        color: #fff;
     }
 }
 
@@ -159,6 +166,15 @@ footer .face {
 
     .social {
         margin: 5em;
+    }
+
+    .social a {
+        transition: .3s;
+    }
+
+    .social a:hover {
+        color: hsl(300, 69%, 71%);
+        
     }
 
     footer .social__link {
