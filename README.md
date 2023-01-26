@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- URL: [Add solution URL here](https://your-solution-url.com)
+- URL: [Huddle](https://rodrigo-fn.github.io/huddle-landing-page/)
 
 ## My process
 
