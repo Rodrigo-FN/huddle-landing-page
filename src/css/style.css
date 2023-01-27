@@ -1,10 +1,12 @@
 @charset "UTF-8";
 
 body {
-    background: hsl(257, 40%, 49%);
     font-family: 'Open Sans', sans-serif;
     max-width: 500px;
     margin: 0 auto;
+
+    background: hsl(257, 40%, 49%) url('../images/bg-mobile.svg') top center no-repeat;
+    background-size: contain;
 }
 
 
@@ -23,8 +25,8 @@ body {
         grid-template-rows: repeat(3, auto);
 
         grid-template-areas: 
-        "header principal"
-        "header principal"
+        "header header"
+        "principal principal"
         "footer footer"
         ;
         grid-auto-rows: 100px;
@@ -32,8 +34,11 @@ body {
         background: hsl(257, 40%, 49%) url('../images/bg-desktop.svg') center center no-repeat;
         background-size: cover;
     }
+
     
 }
+
+
 /* Section Header */
 .header {
     grid-area: header;
@@ -49,15 +54,15 @@ body {
     max-width: 100%;
 }
 
-.header {
-    background: url('../images/bg-mobile.svg') center center no-repeat;
-    background-size: cover;
-}
+
 
 @media (min-width: 880px) {
+
+
     .header {
         display: flex;
         flex-direction: column;
+        background: transparent;
     }
 
     .logo {
@@ -66,12 +71,26 @@ body {
 
 }
 
+/* Section Image*/
+
+
+@media (min-width: 880px) {
+    .image {
+        margin-right: 50px;
+        min-width: 490px;
+
+    }
+    
+}
+
+
 /* Section Principal*/
 
 .principal {
     grid-area: principal;
     text-align: center;
     padding: 2rem;
+
 }
 
 .principal .titulo {
@@ -99,20 +118,23 @@ body {
     margin-bottom: 2rem;
 
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.404);
+
+    cursor: pointer;
 }
 
 @media (min-width: 880px) {
     .principal {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         text-align: left;
+        margin-right: 100px;
     }
 
     .principal .principal__item {
         display: flex;
         flex-direction: column;
-        max-width: 500px;
+        max-width: 600px;
     }
 
     .principal .titulo {
@@ -145,6 +167,7 @@ footer .social__link {
     font-size: 30px;
     color: #fff;
     margin: 15px;
+    cursor: pointer;
 }
 
 footer .face {
